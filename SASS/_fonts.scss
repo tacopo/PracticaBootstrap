@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto:wght@300&display=swap');
+
+$fuente-titulos: 'Merriweather Sans', sans-serif;
+$fuente-textos: 'Roboto', sans-serif;
+
+@mixin fuente-titulos($tamaño){
+  font-family: $fuente-titulos;
+  color: $color-texto-en-primario;
+  font-size: $tamaño;
+}
+
+@mixin fuente-textos(){
+  font-family: $fuente-textos;
+  font-size: 18px;
+  color: $color-texto-en-fondos;
+}

@@ -1,6 +1,32 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "colors";
+@import "fonts";
 
 .logoImg{
   max-height: 90px;
   max-width: 90px;
+}
+body{
+  background-color: $color-fondos;
+  *{
+    @include fuente-textos;
+  }
+}
+nav {
+  background-color: $color-primario;
+
+  #menu {
+    align-self: center;
+    justify-content: center;
+    a {
+      @include fuente-titulos(24px);
+    }
+    .dropdown-menu{
+      background-color: $color-primario;
+    }
+  }
+  .navbar-toggler{
+    background-color: $color-primario-claro-1;
+
+  }
 }
